@@ -36,7 +36,7 @@ services:
     networks: 
       - laravel
     volumes: 
-      - ./mysql:/var/lib/mysql
+      - ./docker/mysql:/var/lib/mysql
     
   php:
     build: 
