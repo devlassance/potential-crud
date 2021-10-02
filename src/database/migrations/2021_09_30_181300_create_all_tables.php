@@ -18,7 +18,7 @@ class CreateAllTables extends Migration
             $table->string('nome', 100);
             $table->char('sexo', 9);
             $table->integer('idade');
-            $table->string('hobby', 100);
+            $table->string('hobby', 300);
             $table->date('datanascimento');
         });
     }
