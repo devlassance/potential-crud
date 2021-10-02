@@ -35,10 +35,8 @@ Route::get('/dev/{id}',  [DevsController::class, 'one']);
 //Adiciona um novo desenvolvedor
 Route::post('/devs', [DevsController::class, 'new']);
 
-/*
-//Editar uma nota
-Route::put('/note/{id}', [DevsController::class, 'edit']);
+//Atualiza os dados de um desenvolvedor
+Route::put('/dev/{id}', [DevsController::class, 'edit']);
 
-//Deletar uma nota
-Route::delete('/note/{id}', [DevsController::class, 'delete']);
-*/
+//Apaga o registro de um desenvolvedor
+Route::delete('/dev/{id}', [DevsController::class, 'delete']);
