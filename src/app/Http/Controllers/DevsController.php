@@ -10,6 +10,10 @@ class DevsController extends Controller
 {   
     private $array = ['message' => []];
 
+    public function index(){ 
+        return view('app');
+    }
+
     public function all(){
         $devs = Dev::all();
 

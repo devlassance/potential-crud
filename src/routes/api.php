@@ -26,7 +26,7 @@ Route::get('/ping', function(Request $request){
 });
 
 //Retorna todos os desenvolvedores
-Route::get('/devs', [DevsController::class, 'all']);
+Route::get('/devs', [DevsController::class, 'all'])->name('api.all');
 
 //Retorna os dados de um desenvolvedor
 Route::get('/dev/{id}',  [DevsController::class, 'one']);
@@ -39,4 +39,4 @@ Route::post('/devs', [DevsController::class, 'new']);
 Route::put('/dev/{id}', [DevsController::class, 'edit']);
 
 //Apaga o registro de um desenvolvedor
-Route::delete('/dev/{id}', [DevsController::class, 'delete']);
+Route::delete('/dev/{id}', [DevsController::class, 'delete'])->name('api.del');
