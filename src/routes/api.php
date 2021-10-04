@@ -33,10 +33,10 @@ Route::get('/dev/{id}',  [DevsController::class, 'one']);
 
 
 //Adiciona um novo desenvolvedor
-Route::post('/devs', [DevsController::class, 'new']);
+Route::post('/devs', [DevsController::class, 'new'])->name('api.new');
 
 //Atualiza os dados de um desenvolvedor
 Route::put('/dev/{id}', [DevsController::class, 'edit']);
 
 //Apaga o registro de um desenvolvedor
-Route::delete('/dev/{id}', [DevsController::class, 'delete'])->name('api.del');
+Route::delete('/dev/{id}', [DevsController::class, 'delete']);

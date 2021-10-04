@@ -15,4 +15,4 @@ use App\Http\Controllers\DevsController;
 |
 */
 
-Route::get('/', [DevsController::class, 'index']);
+Route::get('/', [DevsController::class, 'index'])->name("index.app");
